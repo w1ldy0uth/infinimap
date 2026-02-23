@@ -81,7 +81,7 @@ Windows (`scripts/install-windows.ps1`):
 # MSVC
 .\scripts\install-windows.ps1 -ConfigurePreset windows-msvc -BuildPreset windows-msvc-debug
 
-# Optional cleanup before build/install
+# Optional: remove build/<preset> AFTER successful install
 .\scripts\install-windows.ps1 -Clean
 ```
 
@@ -94,7 +94,7 @@ Linux (`scripts/install-linux.sh`):
 # Custom presets
 ./scripts/install-linux.sh linux-gcc linux-gcc-debug
 
-# Optional cleanup before build/install
+# Optional: remove build/<preset> AFTER successful install
 ./scripts/install-linux.sh linux-gcc linux-gcc-debug "$(pwd)/dist/linux-gcc" --clean
 ```
 
@@ -107,6 +107,6 @@ macOS (`scripts/install-macos.sh`):
 # Custom presets
 ./scripts/install-macos.sh macos-clang macos-clang-debug
 
-# Optional cleanup before build/install
+# Optional: remove build/<preset> AFTER successful install
 ./scripts/install-macos.sh macos-clang macos-clang-debug "$(pwd)/dist/macos-clang" --clean
 ```
