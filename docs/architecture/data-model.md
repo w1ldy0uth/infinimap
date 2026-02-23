@@ -49,6 +49,15 @@
 3. River cells must have valid downstream path unless terminal at lake/ocean.
 4. Manual edits must be explicitly marked for regeneration policy.
 
+## Coordinate conventions
+
+1. Grid origin is top-left: `(0, 0)`.
+2. `x` increases left-to-right, `y` increases top-to-bottom.
+3. Linear index is row-major: `index = y * world_width + x`.
+4. Valid coordinate range is:
+   - `0 <= x < world_width`
+   - `0 <= y < world_height`
+
 ## Serialization notes
 
 1. `.infm` should include format version and optional migration metadata.
