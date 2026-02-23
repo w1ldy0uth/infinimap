@@ -2,6 +2,7 @@
 cmake-build-*/
 build/
 out/
+dist/
 
 # CMake artifacts
 CMakeCache.txt
